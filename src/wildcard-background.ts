@@ -1,10 +1,6 @@
-// This is an extension "background script" which access certain Chrome APIs
-// and makes them available to content scripts.
-// For more info: https://stackoverflow.com/questions/14211771/accessing-chrome-history-from-javascript-in-an-extension-and-changing-the-page-b
-
 'use strict';
 
-window['state'] = {};
+self['state'] = {};
 
 // to add functionality only available in background scripts,
 // add a message handler to this list
